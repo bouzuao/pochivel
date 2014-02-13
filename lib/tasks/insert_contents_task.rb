@@ -23,8 +23,7 @@ class Tasks::InsertContentsTask
       h = Hash.from_xml(open(url).read)
 
       h['Results']['Plan'].each do |t|
-        pp t
-        #pp t['urls']['pc']
+        pp t['PlanPictureURL']
         #pp t['mood'][0]['photo']
         #content= Content. new
         #content.image_url =  t['mood'][0]['photo']
