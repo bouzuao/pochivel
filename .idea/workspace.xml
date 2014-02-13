@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2d0cb7-3209-4cba-a473-a52a23031a81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/pochivel.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/hotels_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/contents_helper.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/contents.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/hotels.js.coffee" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/contents.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/hotels.css.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/contents_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/content.rb" afterPath="$PROJECT_DIR$/app/models/hotel.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/_form.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/edit.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/index.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/index.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/hotels/index.json.jbuilder" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/new.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/new.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/show.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/show.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/hotels/show.json.jbuilder" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/contents/test.html" afterPath="$PROJECT_DIR$/app/views/hotels/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-89cd7316ecf9dde0b4b9193a18373f0d.js" afterPath="$PROJECT_DIR$/public/assets/application-89cd7316ecf9dde0b4b9193a18373f0d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-acfa061381a4fa06c6789a390b2be0d0.js" afterPath="$PROJECT_DIR$/public/assets/application-acfa061381a4fa06c6789a390b2be0d0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-d1dcb1ffe96710d40899e9c0f3e302bf.js" afterPath="$PROJECT_DIR$/public/assets/application-d1dcb1ffe96710d40899e9c0f3e302bf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-de449260af728486054ffdc634b19515.js" afterPath="$PROJECT_DIR$/public/assets/application-de449260af728486054ffdc634b19515.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/contents_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/contents_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" afterPath="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pochivel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,28 +32,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hotels_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/hotels_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="371" selection-end="371" vertical-scroll-proportion="0.49270073">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="insert_contents_task.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+            <state line="33" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotel.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,8 +79,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/content.rb" />
         <option value="$PROJECT_DIR$/app/models/hotel.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
         <option value="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
       </list>
     </option>
   </component>
@@ -592,23 +567,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+        <state line="33" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/hotels_controller.rb">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="371" selection-end="371" vertical-scroll-proportion="0.49270073">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
