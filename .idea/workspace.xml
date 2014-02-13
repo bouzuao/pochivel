@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2d0cb7-3209-4cba-a473-a52a23031a81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" afterPath="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
     </list>
     <ignored path="pochivel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,7 +10,7 @@
     <file path="/temp.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298314927" ignored="false" />
     <file path="/hotels_controller.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298608666" ignored="false" />
     <file path="/content.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298362412" ignored="false" />
-    <file path="/insert_contents_task.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298531442" ignored="false" />
+    <file path="/insert_contents_task.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392299926915" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +30,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="insert_contents_task.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="insert_contents_task.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+            <state line="22" column="6" selection-start="575" selection-end="575" vertical-scroll-proportion="0.49751243">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -80,6 +87,7 @@
         <option value="$PROJECT_DIR$/app/models/content.rb" />
         <option value="$PROJECT_DIR$/app/models/hotel.rb" />
         <option value="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
+        <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
       </list>
     </option>
@@ -574,16 +582,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="6" selection-start="575" selection-end="575" vertical-scroll-proportion="0.49751243">
           <folding />
         </state>
       </provider>
