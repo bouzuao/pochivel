@@ -3,6 +3,8 @@ Pochivel::Application.routes.draw do
 
   root :to => 'contents#start'
   post 'call' => 'contents#call'
+  get 'wait' => 'contents#wait'
+  get 'finish' => 'contents#finish'
 
   post "twiml/start"
   post "twiml/question"

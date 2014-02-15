@@ -9,12 +9,11 @@ gem 'rails', '4.0.1'
 # -------------------------------
 gem 'mysql2'
 
+
 gem 'simple_form'
-gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
-gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -71,4 +70,5 @@ gem 'twilio-ruby'
 # 設定ファイル
 gem 'settingslogic'
 
+# yamlモデル
 gem 'active_hash'
