@@ -21,16 +21,4 @@
 
 ## TODO
 
-### 基礎
-- [ ] 環境設定
-- [ ] DB設計
-- [ ] じゃらんAPIからマスターデータの作成  ⇒　2/15 gushiken 着手中
-
-### 初期入力画面
-- [ ] UI設計
-
-### twilio画面
-- [ ] UI設計
-
-### 予約画面
-- [ ] UI設計
+https://github.com/bouzuao/pochivel/issues/1
