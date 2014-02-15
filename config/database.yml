@@ -72,3 +72,9 @@ production:
   #個人PCなら
   password: asdf
   #別PCなら
+
+tady:
+  adapter: sqlite3
+  database: db/tady.sqlite3
+  pool: 5
+  timeout: 5000

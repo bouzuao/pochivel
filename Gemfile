@@ -6,6 +6,8 @@ gem 'rails', '4.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+gem 'sqlite3', group: :tady
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -51,3 +53,14 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# twilioライブラリ
+gem 'twilio-ruby'
+
+# 設定ファイル
+gem 'settingslogic'
+
+# 非同期処理
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'

@@ -19,18 +19,20 @@
 - 発表会・授賞式：2014年2月16日(日) 13:00 - 18:00
 
 
+## sidekiq
+
+電話を掛ける部分を非同期にするために`sidekiq`を使っています。
+
+http://qiita.com/nysalor/items/94ecd53c2141d1c27d1f
+
+非同期ジョブを実行するためには
+
+```
+bundle exec sidekiq -q default
+```
+
+の実行が必要です。
+
 ## TODO
 
-### 基礎
-- [ ] 環境設定
-- [ ] DB設計
-- [ ] じゃらんAPIからマスターデータの作成  ⇒　2/15 gushiken 着手中
-
-### 初期入力画面
-- [ ] UI設計
-
-### twilio画面
-- [ ] UI設計
-
-### 予約画面
-- [ ] UI設計
+https://github.com/bouzuao/pochivel/issues/1
