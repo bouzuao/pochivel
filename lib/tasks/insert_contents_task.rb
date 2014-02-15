@@ -25,7 +25,7 @@ class Tasks::InsertContentsTask
       hotel_api = 'http://jws.jalan.net/APIAdvance/StockSearch/V1/?key=aqr1442b809a0e&'
       hotel_api += pref
       hotel_api += '&stay_count=2&adult_num=2&min_rate=10000&max_rate=50000&count=100'
-      pp apis << hotel_api
+        pp apis << hotel_api
     end
 
     apis.each do |api|
