@@ -1,5 +1,3 @@
-require 'sidekiq/web'
-
 Pochivel::Application.routes.draw do
   resources :contents
 
