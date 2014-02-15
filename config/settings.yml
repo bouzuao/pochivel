@@ -1,15 +1,21 @@
 defaults: &defaults
+  app_host: 'http://ec2-54-199-210-85.ap-northeast-1.compute.amazonaws.com'
   twilio:
-    caller_id: '+815031596100'
-    app_host: 'http://209b8961.ngrok.com'
-    account_sid: 'ACc4f73f3a82ecfe7ea17d0cae13b611cd'
-    auth_token: 'e196f1e803969e9e1ea3945bb0c985a4'
+    # caller_id: '+815031596100'
+    # account_sid: 'ACc4f73f3a82ecfe7ea17d0cae13b611cd'
+    # auth_token: 'e196f1e803969e9e1ea3945bb0c985a4'
+    caller_id: '+81345894998'
+    account_sid: 'AC292f7810854541b5fc6b47987da018d1'
+    auth_token: '77befdbae77bb9582a99b7299b0e8b98'
+  jalan_api_key: 'aqr1442b809a0e'
 
 development:
   <<: *defaults
+  app_host: 'http://209b8961.ngrok.com'
 
 test:
   <<: *defaults
 
 production:
   <<: *defaults
+  app_host: 'http://ec2-54-199-210-85.ap-northeast-1.compute.amazonaws.com'

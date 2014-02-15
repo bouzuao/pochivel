@@ -25,8 +25,6 @@ class ContentsController < ApplicationController
   # アプリの起動ページ
   def start
     generate_user!
-
-    puts 'current_user.id', current_user.id
   end
 
   # 電話をかけるアクション
@@ -47,7 +45,7 @@ class ContentsController < ApplicationController
     client.account.calls.create(
       :from => Settings.twilio.caller_id, # 発信者
       :to => tel,   # 電話先
-      :url => "#{Settings.twilio.app_host}/twiml/start?user_id=#{current_user.id}" # twxml
+      :url => "#{Settings.app_host}/twiml/start?user_id=#{current_user.id}" # twxml
     )
 
     redirect_to :wait
@@ -55,7 +53,7 @@ class ContentsController < ApplicationController
 
   # 電話が終わるまで待つ
   def wait
-    if current_user.finish_calling?
+    if current_user.finish_question?
       redirect_to :finish
     end
   end

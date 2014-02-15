@@ -1,0 +1,12 @@
+- id: 1
+  name: '北海道'
+  code: '01'
+- id: 2
+  name: '東北'
+  code: '05'
+- id: 3
+  name: '近畿'
+  code: '35'
+- id: 4
+  name: '九州'
+  code: '50'

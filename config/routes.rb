@@ -7,6 +7,7 @@ Pochivel::Application.routes.draw do
   get 'finish' => 'contents#finish'
 
   post "twiml/start"
+  post "twiml/ask_region"
   post "twiml/question"
   post "twiml/finish"
 
