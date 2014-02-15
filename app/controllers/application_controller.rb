@@ -7,14 +7,15 @@ class ApplicationController < ActionController::Base
   # 新しいユーザーを作成
   def generate_user!
     @_current_user = User.create
-    session[:user_id] = @_current_user.id
+    puts 'session[:user_id]1 ', session[:user_id] = @_current_user.id
 
     @_current_user
   end
 
   # 現在のUserを取得
   def current_user
-    puts session[:user_id]
+    puts 'session[:user_id]2 ', session[:user_id]
+    puts 'params[:user_id]', params[:user_id]
 
     # TwiML経由
     if params[:user_id]
@@ -22,7 +23,7 @@ class ApplicationController < ActionController::Base
 
     # web経由
     else
-      @_current_user = User.where(session[:user_id]).first || generate_user!
+      @_current_user = User.find_by(id: session[:user_id]) || generate_user!
     end
   end
 end

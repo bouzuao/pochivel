@@ -5,7 +5,7 @@ class TwimlController < ApplicationController
   # Twilioの最初
   def start
     xml_str = Twilio::TwiML::Response.new do |response|
-      response.Say "ポチベルをご利用いただきありがとうございます。 ", :language => "ja-jp"
+      response.Say " ポチ ベル をご利用いただき ありがとう ございます。 ", :language => "ja-jp"
       response.Redirect "#{Settings.twilio.app_host}/twiml/question?q_num=1&user_id=#{current_user.id}", method: 'POST'
     end.text
 
@@ -49,7 +49,7 @@ class TwimlController < ApplicationController
 
           # gather.Say "現在の検索条件でxxx件ヒットします。", :language => "ja-jp"
 
-          gather.Say "#{current_question.contents}。   #{current_question.find_choice(1)} がいいかたは  イチ を。   #{Question.find(q_num).find_choice(2)} がいいかたは  ニ を  押してください", :language => "ja-jp"
+          gather.Say "#{current_question.contents}。   #{current_question.find_choice(1)} がいいかたは、 イチ を。   #{Question.find(q_num).find_choice(2)} がいいかたは、 ニ を  押してください", :language => "ja-jp"
         end
       end.text
 
