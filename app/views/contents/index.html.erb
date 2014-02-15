@@ -1,13 +1,11 @@
-<!doctype html>
-<html>
-<head>
-</head>
-<body class="classic">
-<div id="main">
-  <header>
-  </header>
-</div>
-
-
-</body>
-</html>
+<%= simple_form_for @book, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :review %>
+  <%= f.input :description %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                books_path, :class => 'btn' %>
+  </div>
+<% end %>

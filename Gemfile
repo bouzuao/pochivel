@@ -4,7 +4,17 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+#gem 'pg'
+
+# -------------------------------
+# db
+# -------------------------------
+gem 'mysql2'
+
+gem 'simple_form'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 gem 'sqlite3', group: :tady
 
