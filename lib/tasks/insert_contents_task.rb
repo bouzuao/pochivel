@@ -19,26 +19,28 @@ class Tasks::InsertContentsTask
     #TODO:ある程度のサイトは一つのモジュールで対応可能なためパラメータや条件で取得を変えるようにしたい。
 
     apis = []
-    for i in 1..47 do
-    str = "%02d" % i.to_s
-     pref = 'pref=' + str + '0000'
-    hotel_api = 'http://jws.jalan.net/APIAdvance/StockSearch/V1/?key=aqr1442b809a0e&'
-    pp hotel_api += pref
-    pp hotel_api += '&stay_count=2&adult_num=2&count=50'
-    apis << hotel_api
+    #for i in 1..47 do
+    for i in 1..2 do
+      str = "%02d" % i.to_s
+      pref = 'pref=' + str + '0000'
+      hotel_api = 'http://jws.jalan.net/APIAdvance/StockSearch/V1/?key=aqr1442b809a0e&'
+      hotel_api += pref
+      hotel_api += '&stay_count=2&adult_num=2&min_rate=10000&max_rate=50000&count=100'
+      pp apis << hotel_api
     end
 
-    apis.each do |url|
-      h = Hash.from_xml(open(url).read)
+    hotel= Hotel.new
+
+    apis.each do |api|
+      h = Hash.from_xml(open(api).read)
       h['Results']['Plan'].each do |t|
-        pp t['PlanPictureURL']
-        pp t['PlanPictureURL']
-    #    #pp t['mood'][0]['photo']
-    #    #content= Content. new
-    #    #content.image_url =  t['mood'][0]['photo']
-    #    #content.url = t['urls']['pc']
-    #    #content.genre = 4
-    #    #content.save
+        if t['PlanPictureURL'].present?
+          pp hotel.url =  t['Hotel']['HotelAddress']
+          pp hotel.samplerate = t['SampleRate']
+          pp hotel.plan_name =  t['PlanName']
+          pp hotel.image_url =  t['PlanPictureURL']
+          pp hotel.save
+        end
       end
     end
 
