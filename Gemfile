@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+# gem 'pg'
 
 gem 'sqlite3', group: :tady
 
@@ -49,7 +49,10 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', '~> 3.1'
+gem 'capistrano-rbenv', '~> 2.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
