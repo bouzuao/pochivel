@@ -13,17 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140213043025) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "contents", force: true do |t|
-    t.string   "url"
-    t.integer  "genre"
-    t.text     "image_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "hotels", force: true do |t|
     t.string   "url"
     t.text     "image_url"

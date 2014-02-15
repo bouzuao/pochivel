@@ -23,6 +23,18 @@ class ContentsController < ApplicationController
   def edit
   end
 
+  # アプリの起動ページ
+  def start
+  end
+
+  # 電話をかけるページ
+  def call
+    tel = params[:tel].sub(/^0/, '+81').gsub(/\-/, '')
+
+    # 非同期に処理
+    CallWorker.perform_async(tel)
+  end
+
   # POST /contents
   # POST /contents.json
   def create
