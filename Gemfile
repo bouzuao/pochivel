@@ -59,3 +59,5 @@ gem 'twilio-ruby'
 
 # 設定ファイル
 gem 'settingslogic'
+
+gem 'active_hash'

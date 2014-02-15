@@ -11,9 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140213043025) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20140215095008) do
+
+  create_table "answers", force: true do |t|
+    t.integer  "question_id"
+    t.integer  "user_id"
+    t.integer  "choice"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "hotels", force: true do |t|
     t.string   "url"
@@ -21,6 +27,15 @@ ActiveRecord::Schema.define(version: 20140213043025) do
     t.string   "prefecture"
     t.string   "samplerate"
     t.string   "plan_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "tel"
+    t.integer  "number"
+    t.integer  "date"
+    t.integer  "span"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tel: MyString
+  number: 1
+  date: 1
+  span: 1
+
+two:
+  tel: MyString
+  number: 1
+  date: 1
+  span: 1
