@@ -4,9 +4,8 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use postgresql as the database for Active Record
-# gem 'pg'
 
-gem 'sqlite3', group: :tady
+gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
