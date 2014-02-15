@@ -5,17 +5,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140213043025_create_hotels.rb" afterPath="$PROJECT_DIR$/db/migrate/20140213043025_create_hotels.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" afterPath="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pochivel.iml" afterPath="$PROJECT_DIR$/.idea/pochivel.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pochivel.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392456457751" ignored="false" />
+    <file path="/Dummy.txt" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392459934384" ignored="false" />
     <file path="/temp.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298314927" ignored="false" />
     <file path="/hotels_controller.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298608666" ignored="false" />
     <file path="/content.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392298362412" ignored="false" />
-    <file path="/insert_contents_task.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392459449462" ignored="false" />
+    <file path="/insert_contents_task.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392462056217" ignored="false" />
     <file path="/README.md" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392432845582" ignored="false" />
     <file path="/20140213043025_create_hotels.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392456684779" ignored="false" />
     <file path="/hotel.rb" changelist="6a2d0cb7-3209-4cba-a473-a52a23031a81" time="1392446815200" ignored="false" />
@@ -41,12 +40,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="insert_contents_task.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="insert_contents_task.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="49" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.433526">
+            <state line="25" column="31" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="208417" column="52" selection-start="9383258" selection-end="9383258" vertical-scroll-proportion="-10.301887">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -59,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.log" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="development.log" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/development.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9298" column="0" selection-start="1799849" selection-end="1799849" vertical-scroll-proportion="0.0">
+            <state line="24589" column="1" selection-start="9253307" selection-end="9253307" vertical-scroll-proportion="27.785515">
               <folding />
             </state>
           </provider>
@@ -71,7 +82,7 @@
       <file leaf-file-name="20140213043025_create_hotels.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140213043025_create_hotels.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="28" selection-start="25" selection-end="28" vertical-scroll-proportion="14.423077">
+            <state line="32" column="18" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +91,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contents/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="-6.25">
+            <state line="10" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,15 +101,6 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="41" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="9" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,7 +153,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/content.rb" />
         <option value="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
-        <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/models/hotel.rb" />
         <option value="$PROJECT_DIR$/log/development.log" />
@@ -162,6 +163,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20140213043025_create_hotels.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/insert_contents_task.rb" />
+        <option value="$PROJECT_DIR$/test.txt" />
       </list>
     </option>
   </component>
@@ -197,6 +199,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,18 +370,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -632,13 +634,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="40" width="1346" height="728" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2576923" sideWeight="0.6703645" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26153848" sideWeight="0.6703645" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -717,11 +719,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="46" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" />
@@ -734,9 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="45" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
@@ -795,28 +790,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contents/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9298" column="0" selection-start="1799849" selection-end="1799849" vertical-scroll-proportion="0.0">
+        <state line="10" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140213043025_create_hotels.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="25" selection-end="28" vertical-scroll-proportion="14.423077">
+        <state line="32" column="18" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208417" column="52" selection-start="9383258" selection-end="9383258" vertical-scroll-proportion="-10.301887">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/insert_contents_task.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="49" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.433526">
+        <state line="25" column="31" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/development.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24589" column="1" selection-start="9253307" selection-end="9253307" vertical-scroll-proportion="27.785515">
           <folding />
         </state>
       </provider>

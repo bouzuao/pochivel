@@ -16,9 +16,9 @@ class CreateHotels < ActiveRecord::Migration
       t.string :samplerate
       t.string :servicechargerate
       t.string :stay
-      t.string :date
-      t.string :month
-      t.string :year
+      #t.string :date
+      #t.string :month
+      #t.string :year
       t.string :rate
       t.string :stock
       t.string :hotelid

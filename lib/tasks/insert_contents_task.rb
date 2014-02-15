@@ -23,58 +23,56 @@ class Tasks::InsertContentsTask
       #for i in 1..2 do
       str = "%02d" % i.to_s
       pref = 'pref=' + str + '0000'
-      stay_date = 'stay_date' + Date.today.strftime("%Y%m%d")
+      #stay_date = 'stay_date=' + Date.today.strftime("%Y%m%d")
       hotel_api = 'http://jws.jalan.net/APIAdvance/StockSearch/V1/?key=aqr1442b809a0e&'
       hotel_api += pref
-      hotel_api += '&stay_count=2&adult_num=2&min_rate=10000&max_rate=50000&count=100&'
-      hotel_api +=  stay_date
+      hotel_api += '&stay_count=2&adult_num=2&min_rate=10000&max_rate=50000&count=100'
       pp apis << hotel_api
     end
 
     apis.each do |api|
-      h = Hash.from_xml(open(api).read)
+     pp h = Hash.from_xml(open(api).read)
       if h['Results']['Plan'].present?
         h['Results']['Plan'].each do |t|
           if t['PlanPictureURL'].present?
             hotel= Hotel.new
-            pp hotel.planname = t['PlanName']
-            pp hotel.roomname = t['RoomName']
-            pp hotel.plandetailurl = t['PlanDetailURL']
-            pp hotel.plancheckin = t['PlanCheckIn']
-            pp hotel.plancheckOut = t['PlanCheckOut']
-            pp hotel.splyperiodstrday  = t['SplyPeriodStrDay']
-            pp hotel.splyperiodendday  = t['SplyPeriodStrDay']
-            pp hotel.planpictureurl = t['PlanPictureURL']
-            pp hotel.planpicturecaption  = t['PlanPictureCaption']
-            pp hotel.meal  = t['Meal']
-            pp hotel.ratetype  = t['RateType']
-            pp hotel.samplerate = t['SampleRate']
-            pp hotel.servicechargerate  = t['ServiceChargeRate']
-            pp hotel.servicechargerate  = t['Stay']
-            pp hotel.date   = t['Date']
-            pp hotel.month   = t['month']
-            pp hotel.year   = t['year']
-            pp hotel.rate   = t['Rate']
-            pp hotel.hotelid  = t['Hotel']['HotelID']
-            pp hotel.hotelname = t['Hotel']['HotelName']
-            pp hotel.postcode    = t['Hotel']['PostCode']
-            pp hotel.hoteladdress = t['Hotel']['HotelAddress']
-            pp hotel.region  = t['Hotel']['Area']['Region']
-            pp hotel.prefecture  = t['Hotel']['Area']['Prefecture']
-            pp hotel.largearea   = t['Hotel']['Area']['LargeArea']
-            pp hotel.smallarea    = t['Hotel']['Area']['SmallArea']
-            pp hotel.hoteltype   = t['Hotel']['HotelType']
-            pp hotel.hoteldetailurl   = t['Hotel']['HotelDetailURL']
-            pp hotel.hotelcatchcopy   = t['Hotel']['HotelCatchCopy']
-            pp hotel.hotelcaption    = t['Hotel']['HotelCaption']
-            pp hotel.pictureurl         = t['Hotel']['PictureURL']
-            pp hotel.picturecaption     = t['Hotel']['PictureCaption']
-            pp hotel.x                  = t['Hotel']['X']
-            pp hotel.y                   = t['Hotel']['Y']
-            pp hotel.hotelnamekana       = t['Hotel']['HotelNameKana']
-            pp hotel.numberofratings     = t['Hotel']['NumberOfRatings']
-            pp hotel.rating    = t['Hotel']['NumberOfRatings']
-            pp hotel.save
+            hotel.planname = t['PlanName']
+            hotel.roomname = t['RoomName']
+            hotel.plandetailurl = t['PlanDetailURL']
+            hotel.plancheckin = t['PlanCheckIn']
+            hotel.plancheckOut = t['PlanCheckOut']
+            hotel.splyperiodstrday  = t['SplyPeriodStrDay']
+            hotel.splyperiodendday  = t['SplyPeriodStrDay']
+            hotel.planpictureurl = t['PlanPictureURL']
+            hotel.planpicturecaption  = t['PlanPictureCaption']
+            hotel.meal  = t['Meal']
+            hotel.ratetype  = t['RateType']
+            hotel.samplerate = t['SampleRate']
+            hotel.servicechargerate  = t['ServiceChargeRate']
+            #pp hotel.date   = t['Stay']['Date']['date']
+            #pp hotel.month   = t['Stay']['Date']['month']
+            #pp hotel.year   = t['Stay']['Date']['year']
+            #pp hotel.rate   = t['Stay']['Rate']
+            hotel.hotelid  = t['Hotel']['HotelID']
+            hotel.hotelname = t['Hotel']['HotelName']
+            hotel.postcode    = t['Hotel']['PostCode']
+            hotel.hoteladdress = t['Hotel']['HotelAddress']
+            hotel.region  = t['Hotel']['Area']['Region']
+            hotel.prefecture  = t['Hotel']['Area']['Prefecture']
+            hotel.largearea   = t['Hotel']['Area']['LargeArea']
+            hotel.smallarea    = t['Hotel']['Area']['SmallArea']
+            hotel.hoteltype   = t['Hotel']['HotelType']
+            hotel.hoteldetailurl   = t['Hotel']['HotelDetailURL']
+            hotel.hotelcatchcopy   = t['Hotel']['HotelCatchCopy']
+            hotel.hotelcaption    = t['Hotel']['HotelCaption']
+            hotel.pictureurl         = t['Hotel']['PictureURL']
+            hotel.picturecaption     = t['Hotel']['PictureCaption']
+            hotel.x                  = t['Hotel']['X']
+            hotel.y                   = t['Hotel']['Y']
+            hotel.hotelnamekana       = t['Hotel']['HotelNameKana']
+            hotel.numberofratings     = t['Hotel']['NumberOfRatings']
+            hotel.rating    = t['Hotel']['NumberOfRatings']
+            hotel.save
           end
         end
 
