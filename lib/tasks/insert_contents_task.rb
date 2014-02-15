@@ -19,8 +19,7 @@ class Tasks::InsertContentsTask
     #TODO:ある程度のサイトは一つのモジュールで対応可能なためパラメータや条件で取得を変えるようにしたい。
 
     apis = []
-    #for i in 1..47 do
-    for i in 1..2 do
+    for i in 1..47 do
       str = "%02d" % i.to_s
       pref = 'pref=' + str + '0000'
       hotel_api = 'http://jws.jalan.net/APIAdvance/StockSearch/V1/?key=aqr1442b809a0e&'
