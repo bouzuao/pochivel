@@ -2,13 +2,13 @@ class CreateHotels < ActiveRecord::Migration
   def change
     create_table :hotels do |t|
       t.string :planname
-      t.string :Roomname
+      t.string :roomname
       t.string :plandetailurl
-      t.string :Facility
+      t.string :facility
       t.string :plancheckin
       t.string :plancheckOut
       t.string :splyperiodstrday
-      t.string :splyperiodEndday
+      t.string :splyperiodendday
       t.string :planpictureurl
       t.string :planpicturecaption
       t.string :meal
@@ -22,25 +22,24 @@ class CreateHotels < ActiveRecord::Migration
       t.string :rate
       t.string :stock
       t.string :hotelid
-
-      t.string :Hotelname
-      t.string :PostCode
-      t.string :HotelAddress
-      t.string :Region
-      t.string :Prefecture
-      t.string :LargeArea
-      t.string :SmallArea
-      t.string :HotelType
-      t.string :Hoteldetailurl
-      t.string :HotelCatchCopy
-      t.string :Hotelcaption
+      t.string :hotelname
+      t.string :postcode
+      t.string :hoteladdress
+      t.string :region
+      t.string :prefecture
+      t.string :largearea
+      t.string :smallarea
+      t.string :hoteltype
+      t.string :hoteldetailurl
+      t.string :hotelcatchcopy
+      t.string :hotelcaption
       t.string :pictureurl
       t.string :picturecaption
-      t.string :X
-      t.string :Y
-      t.string :HotelnameKana
-      t.string :NumberOfRatings
-      t.string :Rating
+      t.string :x
+      t.string :y
+      t.string :hotelnamekana
+      t.string :numberofratings
+      t.string :rating
       t.timestamps
     end
   end
