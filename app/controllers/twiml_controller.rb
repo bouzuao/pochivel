@@ -18,7 +18,7 @@ class TwimlController < ApplicationController
     q_num = params[:q_num].to_i
 
     # 直前の回答
-    last_answer = params[:Digits].presence
+    last_answer = params[:Digits].presence.try(:to_i)
 
     # 質問が終了する場合
     if questions[q_num].blank?
