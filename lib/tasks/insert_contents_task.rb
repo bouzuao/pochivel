@@ -29,12 +29,11 @@ class Tasks::InsertContentsTask
       pp apis << hotel_api
     end
 
-    hotel= Hotel.new
-
     apis.each do |api|
       h = Hash.from_xml(open(api).read)
       h['Results']['Plan'].each do |t|
         if t['PlanPictureURL'].present?
+          hotel= Hotel.new
           pp hotel.url =  t['Hotel']['HotelAddress']
           pp hotel.samplerate = t['SampleRate']
           pp hotel.plan_name =  t['PlanName']
