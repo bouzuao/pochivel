@@ -24,14 +24,31 @@ class ContentsController < ApplicationController
 
   # アプリの起動ページ
   def start
+    generate_user!
+
+    puts current_user.id
   end
 
-  # 電話をかけるページ
+  # 電話をかけるアクション
   def call
+    # 電話番号を国際電話
     tel = params[:tel].sub(/^0/, '+81').gsub(/\-/, '')
+    date = params[:date] && params[:date].gsub(/\-/, '') # 2014-02-15形式で来る
 
-    # 非同期に処理
-    CallWorker.perform_async(tel)
+    current_user.update_attributes({
+      tel: tel,
+      number: params[:number],
+      date: date,
+      span: params[:span]
+    })
+
+    client = Twilio::REST::Client.new Settings.twilio.account_sid, Settings.twilio.auth_token
+
+    client.account.calls.create(
+      :from => Settings.twilio.caller_id, # 発信者
+      :to => tel,   # 電話先
+      :url => "#{Settings.twilio.app_host}/twiml/start?user_id=#{current_user.id}" # twxml
+    )
   end
 
   # POST /contents

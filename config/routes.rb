@@ -1,7 +1,6 @@
 require 'sidekiq/web'
 
 Pochivel::Application.routes.draw do
-
   resources :contents
 
   root :to => 'contents#start'
@@ -10,8 +9,6 @@ Pochivel::Application.routes.draw do
   post "twiml/start"
   post "twiml/question"
   post "twiml/finish"
-
-  mount Sidekiq::Web, at: "/sidekiq"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,7 +1,16 @@
 
 <%= form_tag('/call', method: 'post') do %>
   <p>
-    あなたの電話番号: <input name="tel" type="tel">
+    あなたの電話番号: <input name="tel" type="tel" placeholder="080-1234-5678">
+  </p>
+  <p>
+    人数: <input name="number" type="text" value="2">
+  </p>
+  <p>
+    日付: <input name="date" type="date" value="2014-02-15">
+  </p>
+  <p>
+    日数: <input name="span" type="tel" value="2">
   </p>
   <p>
     <button type="submit">ポチべるを呼ぶ！</button>

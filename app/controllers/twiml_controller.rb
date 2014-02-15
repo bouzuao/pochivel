@@ -6,7 +6,7 @@ class TwimlController < ApplicationController
   def start
     xml_str = Twilio::TwiML::Response.new do |response|
       response.Say "ポチベルをご利用いただきありがとうございます。 ", :language => "ja-jp"
-      response.Redirect "#{Settings.twilio.app_host}/twiml/question?q_num=0", method: 'POST'
+      response.Redirect "#{Settings.twilio.app_host}/twiml/question?q_num=1&user_id=#{current_user.id}", method: 'POST'
     end.text
 
     render xml: xml_str
@@ -18,28 +18,38 @@ class TwimlController < ApplicationController
     q_num = params[:q_num].to_i
 
     # 直前の回答
-    last_answer = params[:Digits].presence
+    last_answer = params[:Digits].presence.try(:to_i)
+
+    # 回答を記録
+    if last_answer
+      current_user.answers.create({
+        question_id: q_num - 1,
+        choice: last_answer
+      })
+    end
+
+    current_question = Question.where(id: q_num).first
 
     # 質問が終了する場合
-    if questions[q_num].blank?
+    if current_question.blank?
       xml_str = Twilio::TwiML::Response.new do |response|
-        response.Redirect "#{Settings.twilio.app_host}/twiml/finish", method: 'POST'
+        response.Redirect "#{Settings.twilio.app_host}/twiml/finish?user_id=#{current_user.id}", method: 'POST'
       end.text
 
       render xml: xml_str
     else
       # TwiMLを作成
       xml_str = Twilio::TwiML::Response.new do |response|
-        response.Gather timeout: 20, finishOnKey: '', numDigits: 1, action: "#{Settings.twilio.app_host}/twiml/question?q_num=#{q_num + 1}" do |gather|
+        response.Gather timeout: 20, finishOnKey: '', numDigits: 1, action: "#{Settings.twilio.app_host}/twiml/question?q_num=#{q_num + 1}&user_id=#{current_user.id}" do |gather|
 
           # 直前の回答がある場合はそれを繰り返す
           if last_answer
-            gather.Say "#{questions[q_num - 1][last_answer]} ですね。 。 。", :language => "ja-jp"
+            gather.Say "#{Question.find(q_num - 1).find_choice(last_answer)} ですね。 。 。", :language => "ja-jp"
           end
 
           # gather.Say "現在の検索条件でxxx件ヒットします。", :language => "ja-jp"
 
-          gather.Say "#{questions[q_num][:q]}。   #{questions[q_num][1]} がいいかたは  イチ を。   #{questions[q_num][2]} がいいかたは  ニ を  押してください", :language => "ja-jp"
+          gather.Say "#{current_question.contents}。   #{current_question.find_choice(1)} がいいかたは  イチ を。   #{Question.find(q_num).find_choice(2)} がいいかたは  ニ を  押してください", :language => "ja-jp"
         end
       end.text
 
@@ -55,27 +65,5 @@ class TwimlController < ApplicationController
     end.text
 
     render xml: xml_str
-  end
-
-  private
-
-  def questions
-    [
-      {
-        q: '旅行 の 行き先 を 決めてください',
-        1 => '北のほう',
-        2 => '南のほう'
-      },
-      {
-        q: '旅館 か ホテル は どちらが いいですか',
-        1 => '旅館',
-        2 => 'ホテル'
-      },
-      {
-        q: '海 と 山ならどちらがいいですか',
-        1 => '海',
-        2 => '山'
-      }
-    ]
   end
 end
