@@ -1,0 +1,10 @@
+finish
+
+<p>回答</p>
+<% @user.answers.each do |answer| %>
+  <p>
+    <%= answer.question.contents %>
+    →
+    <%= answer.question.find_choice(answer.choice) %>
+  </p>
+<% end %>

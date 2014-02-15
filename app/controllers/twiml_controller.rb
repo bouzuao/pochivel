@@ -49,7 +49,7 @@ class TwimlController < ApplicationController
 
           # gather.Say "現在の検索条件でxxx件ヒットします。", :language => "ja-jp"
 
-          gather.Say "#{current_question.contents}。   #{current_question.find_choice(1)} がいいかたは  イチ を。   #{Question.find(q_num).find_choice(2)} がいいかたは  ニ を  押してください", :language => "ja-jp"
+          gather.Say "#{current_question.contents}。   #{current_question.find_choice(1)} がいいかたは、 イチ を。   #{Question.find(q_num).find_choice(2)} がいいかたは、 ニ を  押してください", :language => "ja-jp"
         end
       end.text
 

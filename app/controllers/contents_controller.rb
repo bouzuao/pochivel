@@ -27,7 +27,7 @@ class ContentsController < ApplicationController
   def start
     generate_user!
 
-    puts current_user.id
+    puts 'current_user.id', current_user.id
   end
 
   # 電話をかけるアクション
@@ -50,7 +50,22 @@ class ContentsController < ApplicationController
       :to => tel,   # 電話先
       :url => "#{Settings.twilio.app_host}/twiml/start?user_id=#{current_user.id}" # twxml
     )
+
+    redirect_to :wait
   end
+
+  # 電話が終わるまで待つ
+  def wait
+    if current_user.finish_calling?
+      redirect_to :finish
+    end
+  end
+
+  # 検索終了
+  def finish
+    @user = current_user
+  end
+
 
   # POST /contents
   # POST /contents.json
