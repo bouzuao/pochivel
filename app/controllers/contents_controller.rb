@@ -47,7 +47,7 @@ class ContentsController < ApplicationController
     client.account.calls.create(
       :from => Settings.twilio.caller_id, # 発信者
       :to => tel,   # 電話先
-      :url => "#{Settings.twilio.app_host}/twiml/start?user_id=#{current_user.id}" # twxml
+      :url => "#{Settings.app_host}/twiml/start?user_id=#{current_user.id}" # twxml
     )
 
     redirect_to :wait
