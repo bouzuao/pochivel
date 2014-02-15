@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Chiroru::Application.config.secret_key_base = '42ecb08731fd78b6559fca149d70cbc938ba49e5da13ce921d2f7b630a3a3b8f653c0927f3218213ebe6238dcc366e3c2a6c90009e039de61750256c86ddae0c'
+Pochivel::Application.config.secret_key_base = '42ecb08731fd78b6559fca149d70cbc938ba49e5da13ce921d2f7b630a3a3b8f653c0927f3218213ebe6238dcc366e3c2a6c90009e039de61750256c86ddae0c'

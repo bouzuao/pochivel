@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Chiroru::Application.load_tasks
+Pochivel::Application.load_tasks

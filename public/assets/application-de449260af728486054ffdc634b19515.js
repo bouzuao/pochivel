@@ -10394,7 +10394,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
 	function initInstructions() {
 		if (isTouch()) {
-			document.getElementById('input-method').innerHTML = 'Chiroru News';
+			document.getElementById('input-method').innerHTML = 'Pochivel';
 		}
 
 		instructionsTimeout = setTimeout(showInstructions, 5000);

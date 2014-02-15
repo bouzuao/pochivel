@@ -1,6 +1,6 @@
 require 'sidekiq/web'
 
-Chiroru::Application.routes.draw do
+Pochivel::Application.routes.draw do
 
   resources :contents
 
