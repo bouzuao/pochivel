@@ -25,8 +25,6 @@ class ContentsController < ApplicationController
   # アプリの起動ページ
   def start
     generate_user!
-
-    puts 'current_user.id', current_user.id
   end
 
   # 電話をかけるアクション
@@ -55,9 +53,9 @@ class ContentsController < ApplicationController
 
   # 電話が終わるまで待つ
   def wait
-    if current_user.finish_calling?
-      redirect_to :finish
-    end
+    # if current_user.finish_calling?
+    #   redirect_to :finish
+    # end
   end
 
   # 検索終了
