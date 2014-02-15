@@ -27,12 +27,18 @@ class ContentsController < ApplicationController
   def start
   end
 
-  # 電話をかけるページ
+  # 電話をかけるアクション
   def call
+    # 電話番号を国際電話
     tel = params[:tel].sub(/^0/, '+81').gsub(/\-/, '')
 
-    # 非同期に処理
-    CallWorker.perform_async(tel)
+    client = Twilio::REST::Client.new Settings.twilio.account_sid, Settings.twilio.auth_token
+
+    client.account.calls.create(
+      :from => Settings.twilio.caller_id, # 発信者
+      :to => tel,   # 電話先
+      :url => "#{Settings.twilio.app_host}/twiml/start" # twxml
+    )
   end
 
   # POST /contents

@@ -59,8 +59,3 @@ gem 'twilio-ruby'
 
 # 設定ファイル
 gem 'settingslogic'
-
-# 非同期処理
-gem 'sidekiq'
-gem 'sinatra', require: false
-gem 'slim'

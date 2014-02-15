@@ -1,7 +1,7 @@
 defaults: &defaults
   twilio:
     caller_id: '+815031596009'
-    app_host: 'http://6032d58e.ngrok.com'
+    app_host: 'http://578e9864.ngrok.com'
     account_sid: 'ACc01e7fd7e56e1585e5d9b69dc38aba19'
     auth_token: '95fdffa7cc8168e26ffe208b5e0d0db4'
 
