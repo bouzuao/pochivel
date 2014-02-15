@@ -1,6 +1,6 @@
-class CreateApiCaches < ActiveRecord::Migration
+class CreateApiRequests < ActiveRecord::Migration
   def change
-    create_table :api_caches do |t|
+    create_table :api_requests do |t|
       t.string :url
       t.text :response
 

@@ -7,6 +7,7 @@ defaults: &defaults
     caller_id: '+81345894998'
     account_sid: 'AC292f7810854541b5fc6b47987da018d1'
     auth_token: '77befdbae77bb9582a99b7299b0e8b98'
+  jalan_api_key: 'aqr1442b809a0e'
 
 development:
   <<: *defaults

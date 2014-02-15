@@ -1,10 +1,17 @@
-finish
+<p>行きたい地方: <%= @user.select_region.name %></p>
 
-<p>回答</p>
-<% @user.answers.each do |answer| %>
-  <p>
-    <%= answer.question.contents %>
-    →
-    <%= answer.question.find_choice(answer.choice) %>
-  </p>
+<% @user.select_conditions.each do |condition| %>
+  <p><%= condition.description %></p>
 <% end %>
+
+<hr>
+■■■あなたに一番おすすめの宿泊施設 → <%= @user.best_hotel.css('HotelName').text %>■■■
+
+<p>
+  <img src="<%= @user.best_hotel.css('PictureURL').text %>">
+</p>
+
+<p>
+  <img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @user.best_hotel.css('HotelAddress').text %>&amp;zoom=14&size=400x400&sensor=false&markers=<%= @user.best_hotel.css('HotelAddress').text %>">
+</p>
+

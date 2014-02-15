@@ -43,4 +43,45 @@ class User < ActiveRecord::Base
     self.send("last_cond_#{int}")
   end
 
+  # API通信用オブジェクト作成
+  # {reg: '01', onsen: true, ...}
+  def generate_condition_for_request
+    hash = {}
+    hash[:reg] = select_region.code if self.reg_id
+
+    (1..max_questions).each do |i|
+      cond_id = self.send("cond_#{i}")
+      next if cond_id.nil?
+
+      hash[Condition.find(cond_id).parameter.to_sym] = true
+    end
+
+    hash
+  end
+
+  def finish_question?
+    api_request = ApiRequest.generate(self.generate_condition_for_request)
+    api_request.total_count < 1000
+  end
+
+  # 選択された地方
+  def select_region
+    Region.find(self.reg_id) if self.reg_id
+  end
+
+  # 検索された条件
+  def select_conditions
+    (1..max_questions).map do |i|
+      cond_id = self.send("cond_#{i}")
+      next if cond_id.nil?
+
+      Condition.find(cond_id)
+    end.compact
+  end
+
+  # 検索条件のなかで一番おすすめのもの
+  def best_hotel
+    api_request = ApiRequest.generate(self.generate_condition_for_request)
+    api_request.best_hotel
+  end
 end

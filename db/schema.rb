@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140215155834) do
+ActiveRecord::Schema.define(version: 20140215171334) do
 
-  create_table "api_caches", force: true do |t|
+  create_table "api_requests", force: true do |t|
     t.string   "url"
     t.text     "response"
     t.datetime "created_at"

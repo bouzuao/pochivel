@@ -53,9 +53,9 @@ class ContentsController < ApplicationController
 
   # 電話が終わるまで待つ
   def wait
-    # if current_user.finish_calling?
-    #   redirect_to :finish
-    # end
+    if current_user.finish_question?
+      redirect_to :finish
+    end
   end
 
   # 検索終了
