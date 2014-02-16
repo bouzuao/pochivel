@@ -11,25 +11,30 @@ calling...
       url: "/call",
       data: { tel: '<%= j params[:tel] %>' },
       success: function(data){
-        console.log('call done')
+        // console.log('call done')
       },
     })
 
     // 一定時間ごとに`current_user.finish_question?`しているか確認
     // 終了していれば`/finish`ページヘ遷移
-    setInterval(function(){
+    var interval_count = 0;
+    var timer_id = setInterval(function(){
+      interval_count += 1
+      if (interval_count > 30) {
+        clearInterval(timer_id);
+      }
       $.ajax({
         type: "GET",
         url: "/check",
         success: function(data){
-          console.log(data)
+          // console.log(data)
           if (data.finish) {
             location.replace('/finish')
           }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown){
-          console.log(XMLHttpRequest, textStatus, errorThrown);
-          alert(errorThrown);
+          // console.log(XMLHttpRequest, textStatus, errorThrown);
+          // alert(errorThrown);
         }
       })
     }, 1 * 1000)
