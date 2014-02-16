@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2d0cb7-3209-4cba-a473-a52a23031a81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contents/start.html.erb" afterPath="$PROJECT_DIR$/app/views/contents/start.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/conditions.yml" afterPath="$PROJECT_DIR$/app/models/conditions.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.yml" afterPath="$PROJECT_DIR$/config/settings.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/twiml_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/twiml_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contents/wait.html.erb" afterPath="$PROJECT_DIR$/app/views/contents/wait.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pochivel.iws" />
@@ -50,10 +54,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="start.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="start.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contents/start.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.47413793">
+            <state line="11" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -113,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/settings.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.5645161">
               <folding />
             </state>
           </provider>
@@ -125,7 +129,7 @@
       <file leaf-file-name="twiml_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/twiml_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+            <state line="11" column="35" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,8 +176,8 @@
         <option value="$PROJECT_DIR$/app/controllers/twiml_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/contents/finish.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/app/views/contents/start.html.erb" />
+        <option value="$PROJECT_DIR$/config/settings.yml" />
       </list>
     </option>
   </component>
@@ -757,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/twiml_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+        <state line="11" column="35" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -772,13 +776,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="51" selection-start="222" selection-end="222" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -806,7 +803,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contents/start.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.47413793">
+        <state line="11" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.5645161">
           <folding />
         </state>
       </provider>

@@ -10,7 +10,6 @@ defaults: &defaults
   jalan_api_key: 'aqr1442b809a0e'
 
 development:
-  <<: *defaults
 #  app_host: 'http://209b8961.ngrok.com'
   app_host: 'http://6b649618.ngrok.com'
 
