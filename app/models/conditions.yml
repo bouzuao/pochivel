@@ -1,13 +1,13 @@
 - id: 1
-  name: '温泉'
+  name: '温泉つき'
   parameter: 'onsen'
   description: '温泉がある宿泊施設'
 - id: 2
-  name: '和室あり'
+  name: 'わしつ あり'
   parameter: 'jpn_room'
   description: '畳敷きの客室がある宿泊施設'
 - id: 3
-  name: '朝夕食付プランあり'
+  name: '朝食・夕食 つきプランあり'
   parameter: '2_meals'
   description: '朝食、夕食付きの宿泊プランのある宿泊施設'
 - id: 4
@@ -23,7 +23,7 @@
   parameter: 'pour'
   description: '天然温泉掛け流しの温泉のある宿泊施設'
 - id: 7
-  name: '露天風呂'
+  name: '露天ぶろ'
   parameter: 'o_bath'
   description: '露天風呂のある宿泊施設'
 - id: 8
@@ -35,6 +35,6 @@
   parameter: 'late_out'
   description: 'チェックアウトが11時以降の宿泊プランのある宿泊施設'
 - id: 10
-  name: '露天風呂付き客室'
+  name: '露天風呂つき客室'
   parameter: 'r_room'
   description: '露天風呂付き客室に泊まれる宿泊プランのある宿泊施設'

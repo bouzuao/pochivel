@@ -2,6 +2,13 @@
 <html>
 <head>
   <title>ポチベル</title>
+
+  <script type="text/javascript">
+    if (!('console' in window)) {
+      window.console = {};
+      window.console.log = function(str){ return str; };
+    }
+  </script>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true,:debug => true  %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true,:debug => true  %>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

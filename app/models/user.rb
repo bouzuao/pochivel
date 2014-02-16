@@ -59,10 +59,15 @@ class User < ActiveRecord::Base
     hash
   end
 
+  # userが質問を完了しているか判定
   def finish_question?
     if self.select_region
       api_request = ApiRequest.generate(self.generate_condition_for_request)
       api_request.total_count < 1000
+
+    # 上限まで回答した場合は終了する
+    elsif self.send("cond_#{max_questions}")
+      true
     else
       # regionが指定されていない時はfinishにしない
       false

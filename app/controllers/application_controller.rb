@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
 
     # TwiML経由
     if params[:user_id]
-      @_current_user ||= User.find(params[:user_id])
+      @_current_user = User.find(params[:user_id])
 
     # web経由
     else
