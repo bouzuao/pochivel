@@ -1,11 +1,38 @@
+<div class="full-screen-slider">
+  <!-- Put the list of images you want to slide in full screen here.
+   The image which has the class 'active' will be the starting slide.
+   -->
+  <img src="img/room.jpg" alt="Room" class="active">
+  <img src="img/inner.jpg" alt="Inner">
+  <img src="img/table.jpg" alt="Table">
+  <img src="img/flower-collection.jpg" alt="Flower">
+  <img src="img/banana.jpg" alt="Banana">
+  <img src="img/nice.jpg" alt="Nice">
+</div>
+<div class="container">
+  <div class="widget transparent lighting-border rounded-corner">
+    <h1 class="brand align-center">
+        ポチ　　ベル
+    </h1>
+    <h2 class="description">
+      ポチベルはあなたのコンシェルジュ。旅行をより楽しくします。
+    </h2>
+    <!-- Below div will be transformed as counter -->
+    <div class="timer">
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <%= form_tag('/wait', method: 'post', class: 'form-search subscribe-container') do %>
+    <div class="input-append">
+      <input name="tel" type="tel" class="subscribe-box" placeholder="電話番号" required>
+      <button type="submit" class="btn btn-success subscribe-btn">ポチベルを呼ぶ</button>
+    </div>
+  <% end %>
+  <div class="footer align-center">
+    <span class="copyright transparent lighting-border rounded-corner">
+      &copy; 2013 Your Inc. All rights reserved.
+    </span>
 
-<%= form_tag('/wait', method: 'post') do %>
-  <p>
-    あなたの電話番号: <input name="tel" type="tel" placeholder="080-1234-5678">
-  </p>
-  <p>
-    <button type="submit">ポチベルを呼ぶ！</button>
-  </p>
-<% end %>
-
+  </div>
+</div>
 
