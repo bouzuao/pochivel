@@ -65,6 +65,8 @@ class TwimlController < ApplicationController
       end.text
 
       render xml: xml_str
+
+    # 質問を継続する場合
     else
       # TwiMLを作成
       xml_str = Twilio::TwiML::Response.new do |response|

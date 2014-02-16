@@ -1,9 +1,11 @@
 Pochivel::Application.routes.draw do
-  resources :contents
+
+  # resources :contents
 
   root :to => 'contents#start'
+  post 'wait' => 'contents#wait'
+  get 'check' => 'contents#check'
   post 'call' => 'contents#call'
-  get 'wait' => 'contents#wait'
   get 'finish' => 'contents#finish'
 
   post "twiml/start"

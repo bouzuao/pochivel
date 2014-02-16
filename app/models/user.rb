@@ -59,6 +59,7 @@ class User < ActiveRecord::Base
     hash
   end
 
+  # userが質問を完了しているか判定
   def finish_question?
     if self.select_region
       api_request = ApiRequest.generate(self.generate_condition_for_request)
