@@ -1,18 +1,42 @@
 
-<p>行きたい地方: <%= @user.select_region.name %></p>
+<div class="panel panel-warning">
+  <div class="panel-heading">あなたの回答</div>
+  <div class="panel-body">
+    <p>行きたい地方: <%= @user.select_region.name %></p>
 
-<% @user.select_conditions.each do |condition| %>
-  <p><%= condition.description %></p>
-<% end %>
+    <% @user.select_conditions.each do |condition| %>
+      <p><%= condition.description %></p>
+    <% end %>
+  </div>
+</div>
 
-<hr>
-■■■あなたに一番おすすめの宿泊施設 → <%= @user.best_hotel.css('HotelName').text %>■■■
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <%= @user.best_hotel.css('HotelName').try(:text) %>
+  </div>
+  <div class="panel-body">
+    <p><%= @user.best_hotel.css('HotelCaption').try(:text) %></p>
+    <p>
+      <%= @user.best_hotel.css('Region').try(:text) %>
+      ＞
+      <%= @user.best_hotel.css('Prefecture').try(:text) %>
+      ＞
+      <%= @user.best_hotel.css('LargeArea').try(:text) %>
+      ＞
+      <%= @user.best_hotel.css('SmallArea').try(:text) %>
+    </p>
+    <p>アクセス: <%= @user.best_hotel.css('AccessInformation').try(:text) %></p>
+  </div>
+</div>
 
 <p>
-  <img src="<%= @user.best_hotel.css('PictureURL').text %>">
+  <img src="<%= @user.best_hotel.css('PictureURL').try(:text) %>" class="img-circle">
 </p>
 
 <p>
-  <img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @user.best_hotel.css('HotelAddress').text %>&amp;zoom=14&size=400x400&sensor=false&markers=<%= @user.best_hotel.css('HotelAddress').text %>">
+  <img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @user.best_hotel.css('HotelAddress').try(:text) %>&amp;zoom=14&size=400x400&sensor=false&markers=<%= @user.best_hotel.css('HotelAddress').try(:text) %>" class="img-thumbnail">
 </p>
 
+<p>
+  <a class="btn btn-warning" href="<%= @user.best_hotel.css('HotelDetailURL').try(:text) %>">予約ページへ進む</a>
+</p>

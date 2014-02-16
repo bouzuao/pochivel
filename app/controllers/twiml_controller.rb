@@ -46,6 +46,7 @@ class TwimlController < ApplicationController
         reg_id: last_answer
       })
     else
+      last_answered_conditon_id = current_user.last_id_to_conditon_id(last_answer)
       current_user.update_attributes({
         "cond_#{q_num - 1}".to_sym => current_user.last_id_to_conditon_id(last_answer), # :cond_2 => 1
       })
@@ -74,9 +75,9 @@ class TwimlController < ApplicationController
         response.Gather timeout: 40, finishOnKey: '', numDigits: 1, action: "#{Settings.app_host}/twiml/question?q_num=#{q_num + 1}&user_id=#{current_user.id}" do |gather|
 
           # 直前の回答がある場合はそれを繰り返す
-          # if last_answer
-          #   gather.Say "#{Question.find(q_num - 1).find_choice(last_answer)} ですね。 。 。", :language => "ja-jp"
-          # end
+          if last_answer && q_num > 1
+            gather.Say "#{Condition.find(last_answered_conditon_id).name} ですね。", :language => "ja-jp"
+          end
 
           # 現在の件数
           # gather.Say "現在の検索条件で、 #{api_request.total_count.to_s}件が、ヒットします。", :language => "ja-jp"
@@ -97,8 +98,8 @@ class TwimlController < ApplicationController
   # Twilioの最後
   def finish
     xml_str = Twilio::TwiML::Response.new do |response|
-      response.Say "あなたの検索条件にヒットする 宿泊場所が見つかりました。 。 。", :language => "ja-jp"
-      response.Say "電話を終了して、ブラウザに戻ってください。。", :language => "ja-jp"
+      response.Say "あなたに ぴったりの 宿泊場所が見つかりました。 。 。", :language => "ja-jp"
+      response.Say "自動的に電話を終了して、ブラウザに戻ります。。", :language => "ja-jp"
     end.text
 
     render xml: xml_str

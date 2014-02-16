@@ -1,11 +1,18 @@
 
+<div class="panel panel-warning">
+  <div class="panel-heading">ポチベルとは</div>
+  <div class="panel-body">
+    ポチベルは、
+    ホテルや旅館の検索において、
+    いままでの「煩雑」で「複雑」な検索を再発明した、
+    新しい旅行の検索サービスです。
+  </div>
+</div>
+
 <%= form_tag('/wait', method: 'post') do %>
-  <p>
-    あなたの電話番号: <input name="tel" type="tel" placeholder="080-1234-5678">
-  </p>
-  <p>
-    <button type="submit">ポチベルを呼ぶ！</button>
-  </p>
+  <div class="form-group">
+    <label for="tel">電話番号を入力してね</label>
+    <input name="tel" type="tel" placeholder="080-1234-5678" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-warning">ポチベルを呼ぶ！</button>
 <% end %>
-
-
