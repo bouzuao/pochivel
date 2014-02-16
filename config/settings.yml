@@ -11,7 +11,7 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  app_host: 'http://7204097a.ngrok.com'
+  app_host: 'http://209b8961.ngrok.com'
 
 test:
   <<: *defaults
