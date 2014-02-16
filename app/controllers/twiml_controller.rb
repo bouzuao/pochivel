@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 class TwimlController < ApplicationController
 
   protect_from_forgery with: :null_session
